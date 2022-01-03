@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mj Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+<style>
+    /*css reset*/
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('IMG/back.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .left {
+        display: absolute;
+        position: absolute;
+        left: 50px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 90px;
+    }
+
+    .left div {
+        align-items: left;
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .mid {
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: yellow;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(56, 52, 52);
+    }
+
+    .container {
+        margin: 10px 1700px;
+        padding: 45px 45px;
+        width: 29%;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 25px;
+        position: absolute;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 303px;
+        padding: 6px;
+        margin: 6px auto;
+        border-radius: 12px;
+        font-size: 20px;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    .container .btn {
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+
+    .quote {
+        display: inline-block;
+        position: absolute;
+        left: 900px;
+        top: 900px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 150px;
+        position: absolute;
+    }
+
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Mj Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"> Home</a></li>
+                <li><a href="#"> About Us</a></li>
+                <li><a href="#"> Schedules</a></li>
+                <li><a href="#"> Pricing</a></li>
+                <li><a href="#"> Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons  -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Us Today!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <br>
+            <div class="more">
+                Gender: <label for="male"> Male </label> <input type="radio" name="myGender" id="male"> <label
+                    for="female"> Female </label> <input type="radio" name="myGender" id="female"> <label for="other">
+                    Other </label> <input type="radio" name="myGender" id="other">
+                <br>
+                <br>
+                <label for="date"> D.O.B: </label>
+                <input type="date" name="myDate" id="date">
+            </div>
+            <br>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <div class="quote">
+        "GET FIT <br> 
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbspDON'T QUIT"
+    </div>
+</body>
+
+</html>
